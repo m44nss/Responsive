@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Reckless";
+  src: url("https://cdn.shopify.com/s/files/1/0297/8132/7932/files/RecklessCondensedS-TRIAL-Book.woff?v=1768655865")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.reckless {
+  font-family:
+    "Reckless",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-family: Reckless;
+}
