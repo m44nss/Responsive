@@ -30,3 +30,11 @@ body {
 h1 {
   font-family: Reckless;
 }
+.purple-top-bar {
+  width: 100%;
+  height: 30px;
+  background-color: #2a2857;
+}
+.topimage img {
+  width: 100%;
+}
