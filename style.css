@@ -6,7 +6,54 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Midnight";
+  src: url("https://cdn.shopify.com/s/files/1/0297/8132/7932/files/midnight-sans-rd-12-medium-trial.otf?v=1768200246")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Figtree";
+  src: url("https://www.twoleavestea.com/cdn/fonts/figtree/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("https://cdn.shopify.com/s/files/1/0297/8132/7932/files/RobotoMono-Regular.ttf?v=1768204557")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
+.roboto-mono {
+  font-family:
+    "Roboto Mono",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+}
+
+.figtree {
+  font-family:
+    "Figtree",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+}
+
+.midnight {
+  font-family:
+    "Midnight",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+}
 .reckless {
   font-family:
     "Reckless",
@@ -33,8 +80,69 @@ h1 {
 .purple-top-bar {
   width: 100%;
   height: 30px;
+  position: relative;
   background-color: #2a2857;
+}
+.purple-top-bar span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  line-height: 1px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.topimage {
+  position: relative;
 }
 .topimage img {
   width: 100%;
+}
+.new {
+  position: absolute;
+  top: 40%;
+  width: fit-content;
+  height: fit-content;
+  background-color: #bada55;
+  margin-left: 40px;
+  padding: 0px 5px;
+  border-radius: 10%;
+  border: 1px solid black;
+  transform: rotate(-5deg);
+}
+.new span {
+  font-size: 60px;
+}
+
+.topimage h1 {
+  position: absolute;
+  top: 55%;
+  margin-left: 40px;
+  font-size: 84px;
+  color: white;
+  font-weight: 300;
+}
+.topimage p {
+  position: absolute;
+  top: 73%;
+  margin-left: 40px;
+  color: white;
+  font-size: 18px;
+}
+.topimage button {
+  display: block;
+  background-color: aqua;
+  position: absolute;
+  top: 87%;
+  font-size: 18px;
+  color: white;
+  border: none;
+  background-color: #2a2857;
+  margin-left: 40px;
+  height: 50px;
+  border-radius: 999px;
+  width: 200px;
 }
