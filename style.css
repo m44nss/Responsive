@@ -100,6 +100,7 @@ h1 {
 }
 .topimage img {
   width: 100%;
+  border-bottom: 1px solid black;
 }
 .new {
   position: absolute;
@@ -145,4 +146,38 @@ h1 {
   height: 50px;
   border-radius: 999px;
   width: 200px;
+}
+
+.white-section h1 {
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Reckless;
+  font-size: 63.4px;
+  font-weight: 300;
+  text-align: center;
+  width: auto;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.white-section {
+  background-color: #fbf9eb;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.best-seller-tag span {
+  position: absolute;
+  top: 46%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  width: fit-content;
+  height: fit-content;
+  background-color: #daaeea;
+  padding: 0px 3px;
+  border-radius: 10px;
+  border: 1px solid black;
+  transform: rotate(-4deg);
 }
