@@ -191,7 +191,9 @@ h1 {
 .card2,
 .card3,
 .card4 {
-  padding-left: 10px;
+  position: relative;
+  text-wrap: nowrap;
+
   height: 340px;
   width: 330px;
   background-color: #bada55;
@@ -199,6 +201,9 @@ h1 {
   border-radius: 10px;
 }
 .tag1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
   height: fit-content;
   width: fit-content;
   padding: 7px;
@@ -207,4 +212,11 @@ h1 {
   font-size: 22px;
   border-radius: 7px;
   border: 1px solid black;
+}
+.rating {
+  top: 20px;
+  right: 10px;
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
 }
