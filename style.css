@@ -194,11 +194,15 @@ h1 {
   position: relative;
   text-wrap: nowrap;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 340px;
   width: 330px;
   background-color: #bada55;
   border: 1px solid black;
   border-radius: 10px;
+  overflow: hidden;
 }
 .tag1 {
   position: absolute;
@@ -219,4 +223,23 @@ h1 {
   position: absolute;
   height: fit-content;
   width: fit-content;
+  font-family: "Roboto Mono";
+  font-size: 14px;
+}
+
+.card-img {
+  height: 100%;
+  padding-top: 50px;
+}
+.card1 {
+  background-color: #c1ee91;
+}
+.card2 {
+  background-color: #c8e892;
+}
+.card3 {
+  background-color: #afebbe;
+}
+.card4 {
+  background-color: #edecf0;
 }
