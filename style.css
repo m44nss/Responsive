@@ -243,3 +243,15 @@ h1 {
 .card4 {
   background-color: #edecf0;
 }
+.card1 button,
+.card2 button,
+.card3 button,
+.card4 button {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
