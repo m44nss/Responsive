@@ -282,3 +282,19 @@ h1 {
   line-height: 1.4;
   color: #5f5c57;
 }
+.three-dashes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.three-dashes span {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  width: 50px;
+  height: 2px;
+  background: #cfcdc1;
+}
+.three-dashes span:nth-child(1) {
+  background-color: #201c1a;
+}
