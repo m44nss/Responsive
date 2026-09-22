@@ -169,7 +169,7 @@ h1 {
 }
 .best-seller-tag span {
   position: absolute;
-  top: 46%;
+  top: 40%;
   left: 42%;
   transform: translate(-50%, -50%);
   font-size: 60px;
@@ -184,15 +184,18 @@ h1 {
 .cards {
   display: flex;
   padding-top: 550px;
+  gap: 24px;
   justify-content: space-around;
 }
-
+.product-card {
+  width: 330px;
+  flex-shrink: 0;
+}
 .card1,
 .card2,
 .card3,
 .card4 {
   position: relative;
-  text-wrap: nowrap;
 
   display: flex;
   justify-content: center;
@@ -254,4 +257,28 @@ h1 {
   width: 50px;
   border-radius: 10px;
   border: 1px solid black;
+}
+.product-info {
+  padding-top: 25px;
+}
+
+.product-info h2 {
+  font-family: "Reckless";
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 22px;
+}
+
+.product-info .price {
+  font-family: "Figtree";
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.product-info .description {
+  font-family: "Figtree";
+  font-size: 14px;
+  line-height: 1.4;
+  color: #5f5c57;
 }
