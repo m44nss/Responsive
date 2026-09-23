@@ -373,25 +373,70 @@ h1 {
   width: 290px;
   border-radius: 10px;
   border: 1px solid black;
-  background-color: #73bc25;
+  background-color: #f5af8a;
   position: relative;
 }
 .content {
-  width: 100px;
-  height: 40px;
-}
-.content h2 {
-  position: absolute;
-  display: inline;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 230px;
+  height: 200px;
+}
+.content > h2 {
+  line-height: 31.2px;
+  position: absolute;
   font-family: Reckless;
-  background-color: #afebbe;
+  text-align: center;
+  font-weight: 400;
 }
 .content p {
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 50%;
+  font-family: Figtree;
+  font-size: 14px;
   transform: translate(-50%, -50%);
+}
+.rc1 h2 {
+  font-size: 32px;
+}
+.rc2 h2 {
+  font-size: 24px;
+}
+.rc3 h2 {
+  font-size: 24px;
+}
+.rc4 h2 {
+  font-size: 32px;
+}
+.rc5 h2 {
+  font-size: 32px;
+}
+.rc2 .content {
+  height: 290px;
+  top: 45%;
+}
+.rc3 .content {
+  height: 250px;
+  top: 45%;
+}
+.rc2 p {
+  top: 85%;
+}
+.rc3 p {
+  top: 85%;
+}
+.rc2 {
+  background-color: #abdf74;
+}
+.rc3 {
+  background-color: #ffd265;
+}
+.rc4 {
+  background-color: #ade674;
+}
+.rc5 {
+  background-color: #d9c2e1;
 }
