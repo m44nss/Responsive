@@ -148,7 +148,7 @@ h1 {
   width: 200px;
 }
 
-.white-section h1 {
+.white-section > h1 {
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -323,13 +323,15 @@ h1 {
 }
 .review-tag {
   position: relative;
-  height: 180px;
+  height: 500px;
+  margin-top: 0;
+  margin-left: 150px;
 }
 .review-tag span {
   position: absolute;
-  top: 90%;
-  left: 20%;
-  transform: translate(-50%, -50%) rotate(-4deg);
+  top: 40%;
+
+  transform: rotate(-4deg);
 
   font-size: 60px;
   width: fit-content;
@@ -339,4 +341,20 @@ h1 {
   padding: 0 3px;
   border-radius: 10px;
   border: 1px solid black;
+}
+.review-h1-div {
+  position: relative;
+  height: 400px;
+}
+.review-h1 {
+  position: absolute;
+  top: 27%;
+  margin-top: 15%;
+  font-size: 60px;
+
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  text-align: left;
+  font-weight: 400;
 }
