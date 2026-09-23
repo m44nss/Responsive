@@ -149,7 +149,7 @@ h1 {
 }
 
 .white-section h1 {
-  top: 20%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: Reckless;
@@ -165,25 +165,30 @@ h1 {
   background-color: #fbf9eb;
   min-height: 100vh;
   width: 100%;
+  padding-bottom: 40px;
   position: relative;
+}
+.best-seller-tag {
+  position: relative;
+  height: 650px;
 }
 .best-seller-tag span {
   position: absolute;
-  top: 40%;
-  left: 42%;
-  transform: translate(-50%, -50%);
+  top: 80%;
+  left: 50%;
+
+  transform: translate(-50%, -50%) rotate(-4deg);
+
   font-size: 60px;
   width: fit-content;
   height: fit-content;
   background-color: #daaeea;
-  padding: 0px 3px;
+  padding: 0 3px;
   border-radius: 10px;
   border: 1px solid black;
-  transform: rotate(-4deg);
 }
 .cards {
   display: flex;
-  padding-top: 550px;
   gap: 24px;
   justify-content: space-around;
 }
@@ -297,4 +302,41 @@ h1 {
 }
 .three-dashes span:nth-child(1) {
   background-color: #201c1a;
+}
+.explore-button {
+  display: block;
+  margin: 40px auto;
+  margin-bottom: 120px;
+  padding: 5px;
+  height: 50px;
+  font-size: 18px;
+  width: 250px;
+  border-radius: 999px;
+  font-weight: 400;
+  border: none;
+  background-color: #2a2857;
+  color: white;
+}
+.hr-line {
+  height: 3px;
+  background-color: black;
+}
+.review-tag {
+  position: relative;
+  height: 180px;
+}
+.review-tag span {
+  position: absolute;
+  top: 90%;
+  left: 20%;
+  transform: translate(-50%, -50%) rotate(-4deg);
+
+  font-size: 60px;
+  width: fit-content;
+  height: fit-content;
+
+  background-color: #73bc25;
+  padding: 0 3px;
+  border-radius: 10px;
+  border: 1px solid black;
 }
