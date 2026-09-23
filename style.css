@@ -358,3 +358,40 @@ h1 {
   text-align: left;
   font-weight: 400;
 }
+.review-cards {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin: auto 7px;
+}
+.rc1,
+.rc2,
+.rc3,
+.rc4,
+.rc5 {
+  height: 400px;
+  width: 290px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: #73bc25;
+  position: relative;
+}
+.content {
+  width: 100px;
+  height: 40px;
+}
+.content h2 {
+  position: absolute;
+  display: inline;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Reckless;
+  background-color: #afebbe;
+}
+.content p {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
