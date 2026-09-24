@@ -369,7 +369,7 @@ h1 {
 .rc3,
 .rc4,
 .rc5 {
-  height: 450px;
+  height: 430px;
   width: 290px;
   border-radius: 10px;
   border: 1px solid black;
@@ -453,8 +453,23 @@ h1 {
   height: 23%;
   width: 92%;
   padding: 5px;
-  background-color: #2a2857;
+  border: 1px solid black;
   overflow: hidden;
+}
+.rc1 .rc-bottom-div {
+  background-color: #ea6d44;
+}
+.rc2 .rc-bottom-div {
+  background-color: #73bc25;
+}
+.rc3 .rc-bottom-div {
+  background-color: #ffb500;
+}
+.rc4 .rc-bottom-div {
+  background-color: #8bc045;
+}
+.rc5 .rc-bottom-div {
+  background-color: #c790db;
 }
 .rc-bottom-div img {
   margin-top: 5px;
@@ -478,4 +493,17 @@ h1 {
   line-height: normal;
   font-size: 14px;
   font-family: Roboto Mono;
+}
+.rc-bottom-div button {
+  padding: 12px;
+  border-radius: 999px;
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  top: 23%;
+  border: 1px solid black;
+  right: 4%;
+}
+.rc-bottom-div > button > span {
+  font-size: 16px;
 }
