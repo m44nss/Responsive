@@ -369,7 +369,7 @@ h1 {
 .rc3,
 .rc4,
 .rc5 {
-  height: 400px;
+  height: 450px;
   width: 290px;
   border-radius: 10px;
   border: 1px solid black;
@@ -388,6 +388,7 @@ h1 {
   line-height: 31.2px;
   position: absolute;
   font-family: Reckless;
+
   text-align: center;
   font-weight: 400;
 }
@@ -395,8 +396,10 @@ h1 {
   position: absolute;
   top: 50%;
   left: 50%;
+  color: black;
+  opacity: 0.5;
   font-family: Figtree;
-  font-size: 14px;
+  font-size: 15px;
   transform: translate(-50%, -50%);
 }
 .rc1 h2 {
@@ -439,4 +442,40 @@ h1 {
 }
 .rc5 {
   background-color: #d9c2e1;
+}
+
+.rc-bottom-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 105%);
+  border-radius: 10px;
+  height: 23%;
+  width: 92%;
+  padding: 5px;
+  background-color: #2a2857;
+  overflow: hidden;
+}
+.rc-bottom-div img {
+  margin-top: 5px;
+  height: 90%;
+}
+.rc-bottom-div hr {
+  rotate: 90deg;
+  position: absolute;
+  left: -17%;
+  width: 100%;
+  bottom: 20%;
+  border: none;
+  height: 1px;
+  background-color: #000;
+}
+.rc-bottom-div p {
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 37%;
+  line-height: normal;
+  font-size: 14px;
+  font-family: Roboto Mono;
 }
