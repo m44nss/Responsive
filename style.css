@@ -551,3 +551,17 @@ h1 {
   letter-spacing: 4px;
   color: white;
 }
+
+.founder-text {
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  left: 6%;
+  top: 70%;
+  text-wrap: nowrap;
+  color: white;
+  font-size: 60px;
+  line-height: 69px;
+  font-family: Reckless;
+  font-weight: 50;
+}
