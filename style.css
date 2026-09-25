@@ -170,10 +170,12 @@ h1 {
 }
 .best-seller-tag {
   position: relative;
+
   height: 650px;
 }
 .best-seller-tag span {
   position: absolute;
+  margin-top: 60px;
   top: 80%;
   left: 50%;
 
@@ -506,4 +508,31 @@ h1 {
 }
 .rc-bottom-div > button > span {
   font-size: 16px;
+}
+.origin-bg {
+  background-color: #fbf9eb;
+  width: 100%;
+  padding-top: 100px;
+  position: relative;
+}
+.origin-bg img {
+  width: 100%;
+  display: block;
+}
+.origin-tag {
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  font-family: Midnight;
+  background-color: #a2c9fc;
+
+  transform: rotate(-2deg);
+
+  font-size: 60px;
+  width: auto;
+  height: auto;
+
+  padding: 4px 1px;
+  border-radius: 10px;
+  border: 1px solid black;
 }
