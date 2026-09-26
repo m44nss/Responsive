@@ -629,17 +629,39 @@ h1 {
 
 .search-box {
   position: absolute;
-  width: 370px;
+  width: 440px;
+  height: 100px;
   left: 15%;
   top: 400px;
   border: 1px solid #222;
   border-radius: 10px;
   display: flex;
   align-items: center;
-  padding: 30px 25px;
+  transition: width 0.5s ease;
+}
+.search-box:focus-within {
+  width: 900px;
+}
+.search-input {
+  position: relative;
+  margin-left: 8%;
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  outline: none;
+  background: transparent;
+
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  font-family: Reckless;
+
+  color: #222;
 }
 
 .typing-text {
+  position: absolute;
+  left: 8%;
   font-size: 30px;
   letter-spacing: 1.5px;
   opacity: 0.4;
@@ -647,70 +669,57 @@ h1 {
   white-space: nowrap;
   overflow: hidden;
   width: 0;
-  border-right: 1px solid #222;
+  pointer-events: none;
 
-  animation:
-    typing 3s steps(20) infinite,
-    changeText 12s infinite;
+  animation: typing 4s steps(12) infinite;
 }
-
+.search-box:focus-within .typing-text {
+  display: none;
+}
 @keyframes typing {
-  0%,
-  100% {
+  0% {
     width: 0;
   }
 
-  20%,
-  80% {
+  25% {
     width: 200px;
+  }
+
+  50% {
+    width: 200px;
+  }
+  75% {
+    width: 0px;
+  }
+
+  100% {
+    width: 0;
   }
 }
 
 @keyframes changeText {
   0%,
   24% {
-    content: "Green Tea";
+    content: "green tea";
   }
 
   25%,
   49% {
-    content: "Black Tea";
+    content: "black tea";
   }
 
   50%,
   74% {
-    content: "Herbal Tea";
+    content: "chai tea";
   }
 
   75%,
   100% {
-    content: "Iced Tea";
+    content: "iced tea";
   }
 }
 
 .typing-text::before {
   content: "Green Tea";
-  animation: textChange 12s infinite;
-}
-
-@keyframes textChange {
-  0%,
-  24% {
-    content: "Green Tea";
-  }
-
-  25%,
-  49% {
-    content: "Black Tea";
-  }
-
-  50%,
-  74% {
-    content: "Herbal Tea";
-  }
-
-  75%,
-  100% {
-    content: "Iced Tea";
-  }
+  animation: changeText 16s infinite;
 }
