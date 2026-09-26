@@ -149,7 +149,7 @@ h1 {
 }
 
 .white-section > h1 {
-  top: 10%;
+  top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: Reckless;
@@ -176,7 +176,7 @@ h1 {
 .best-seller-tag span {
   position: absolute;
   margin-top: 60px;
-  top: 80%;
+  top: 60%;
   left: 50%;
 
   transform: translate(-50%, -50%) rotate(-4deg);
@@ -597,4 +597,120 @@ h1 {
   left: 43.3%;
   border: none;
   border-radius: 999px;
+}
+.discover-section {
+  height: 800px;
+  width: 100%;
+  background-color: #a2c9fc;
+  position: relative;
+}
+.discover-section > span {
+  position: absolute;
+  line-height: 0.8;
+  left: 15%;
+  top: 130px;
+  transform: rotate(-2deg);
+  font-family: Midnight;
+  font-size: 60px;
+  width: fit-content;
+  height: fit-content;
+  background-color: #ff7f31;
+  padding: 3px 3px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.discover-section p {
+  position: absolute;
+  font-family: Reckless;
+  font-size: 60px;
+  left: 15%;
+  top: 240px;
+}
+
+.search-box {
+  position: absolute;
+  width: 370px;
+  left: 15%;
+  top: 400px;
+  border: 1px solid #222;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 30px 25px;
+}
+
+.typing-text {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  opacity: 0.4;
+  font-family: Reckless;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  border-right: 1px solid #222;
+
+  animation:
+    typing 3s steps(20) infinite,
+    changeText 12s infinite;
+}
+
+@keyframes typing {
+  0%,
+  100% {
+    width: 0;
+  }
+
+  20%,
+  80% {
+    width: 200px;
+  }
+}
+
+@keyframes changeText {
+  0%,
+  24% {
+    content: "Green Tea";
+  }
+
+  25%,
+  49% {
+    content: "Black Tea";
+  }
+
+  50%,
+  74% {
+    content: "Herbal Tea";
+  }
+
+  75%,
+  100% {
+    content: "Iced Tea";
+  }
+}
+
+.typing-text::before {
+  content: "Green Tea";
+  animation: textChange 12s infinite;
+}
+
+@keyframes textChange {
+  0%,
+  24% {
+    content: "Green Tea";
+  }
+
+  25%,
+  49% {
+    content: "Black Tea";
+  }
+
+  50%,
+  74% {
+    content: "Herbal Tea";
+  }
+
+  75%,
+  100% {
+    content: "Iced Tea";
+  }
 }
