@@ -599,7 +599,7 @@ h1 {
   border-radius: 999px;
 }
 .discover-section {
-  height: 800px;
+  height: 1000px;
   width: 100%;
   background-color: #a2c9fc;
   position: relative;
@@ -737,4 +737,31 @@ h1 {
 .typing-text::before {
   content: "Green Tea";
   animation: changeText 16s infinite;
+}
+
+.discover-section p:nth-child(4) {
+  position: absolute;
+  top: 650px;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: Figtree;
+}
+
+.vibe-container {
+  position: relative;
+  top: 690px;
+  margin-left: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 80%;
+  justify-content: left;
+}
+.vibe-container button {
+  padding: 10px 25px;
+  border: 1px solid #222;
+  border-radius: 15px;
+  background: rgb(218, 234, 255);
+  font-family: Reckless;
+  font-size: 32px;
 }
