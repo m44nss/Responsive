@@ -518,9 +518,10 @@ h1 {
 }
 .origin-bg > img {
   width: 100%;
+  height: 100%;
   margin-top: 100px;
   display: block;
-  opacity: 0.6;
+  opacity: 1;
 }
 .origin-tag {
   position: absolute;
@@ -767,4 +768,35 @@ h1 {
 }
 .vibe-container button:hover {
   background-color: #8ebdfa;
+}
+.cafe-section {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #2a2857;
+}
+.cafe-section > img {
+  width: 50%;
+}
+.cafe-section h1 {
+  font-family: Reckless;
+  color: white;
+  font-weight: 400;
+  margin: 0 auto;
+  transform: translate(-20%, 70%);
+  font-size: 84px;
+}
+
+.cafe-text > p {
+  font-family: Figtree;
+  font-size: 22px;
+  color: white;
+  transform: translate(-20%, 300%);
+}
+.cafe-text > button {
+  padding: 15px 55px;
+  border-radius: 999px;
+  border: none;
+  transform: translate(-65%, 450%);
 }
