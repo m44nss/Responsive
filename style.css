@@ -601,7 +601,6 @@ h1 {
 .discover-section {
   height: 1000px;
   width: 100%;
-  background-color: #a2c9fc;
   position: relative;
 }
 .discover-section > span {
@@ -764,4 +763,8 @@ h1 {
   background: rgb(218, 234, 255);
   font-family: Reckless;
   font-size: 32px;
+  transition: background-color 0.3s ease;
+}
+.vibe-container button:hover {
+  background-color: #8ebdfa;
 }
