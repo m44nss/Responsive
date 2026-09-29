@@ -939,6 +939,7 @@ h1 {
   filter: brightness(0) invert(1);
 }
 .journal-section {
+  position: relative;
   width: 100%;
   padding-top: 150px;
   background-color: #73bc25;
@@ -962,4 +963,47 @@ h1 {
 .journal-section h1 {
   font-size: 60px;
   font-weight: 400;
+  margin-bottom: 100px;
+}
+
+.jrnl-section-flex {
+  width: 100%;
+  width: calc(100% + 250px);
+  margin-left: -250px;
+  background-color: #5f5c57;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.jrnl-section-flex .crd {
+  position: relative;
+  overflow: hidden;
+  height: 390px;
+  width: 340px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: #8ebdfa;
+}
+
+.crd img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.crd span {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  line-height: 0.8;
+  margin-bottom: 50px;
+  display: block;
+  font-family: Midnight;
+  transform: rotate(0deg);
+  font-size: 22px;
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  padding: 5px 3px;
+  border-radius: 4px;
+  border: 1px solid black;
 }
