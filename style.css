@@ -895,7 +895,14 @@ h1 {
   padding: 15px 50px;
   border: 1px solid black;
   border-radius: 999px;
+  background-color: white;
+  transition: 0.3s ease;
 }
+.right-section button:hover {
+  background-color: #2a2857;
+  color: white;
+}
+
 .latte-card-bg > button {
   position: absolute;
   top: 50%;
@@ -930,4 +937,29 @@ h1 {
 
 .latte-card-bg button:hover img {
   filter: brightness(0) invert(1);
+}
+.journal-section {
+  width: 100%;
+  padding-top: 150px;
+  background-color: #73bc25;
+  padding-left: 250px;
+}
+
+.journal-section span {
+  line-height: 0.8;
+  margin-bottom: 50px;
+  display: block;
+  font-family: Midnight;
+  transform: rotate(-4deg);
+  font-size: 60px;
+  width: fit-content;
+  height: fit-content;
+  background-color: #ffb500;
+  padding: 5px 3px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.journal-section h1 {
+  font-size: 60px;
+  font-weight: 400;
 }
