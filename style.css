@@ -1070,3 +1070,40 @@ h1 {
   background-color: white;
   color: black;
 }
+.orange-section {
+  overflow: hidden;
+
+  background-color: #73bc25;
+}
+.imgdiv {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  margin-top: 100px;
+  background-color: #a2c9fc;
+}
+
+.orange-section img {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 120%;
+}
+.aboutus-div {
+  position: absolute;
+  width: 30%;
+  left: 50px;
+  top: 60px;
+  bottom: 60px;
+  border-radius: 15px;
+  border: 1px solid black;
+  height: calc(100%-120px);
+  background-color: #f26412;
+}
+
+.aboutus-div h1 {
+  font-family: Reckless;
+  font-size: 70px;
+  color: white;
+  font-weight: 400;
+  padding: 60px;
+}
