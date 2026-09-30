@@ -1124,3 +1124,81 @@ h1 {
   color: white;
   background-color: #2a2857;
 }
+
+.steep-sec {
+  margin-top: -5px;
+  min-height: 500px;
+  padding-top: 100px;
+  background-color: #c0dbff;
+}
+
+.steep-sec h2 {
+  font-family: Midnight;
+  font-size: 40px;
+  margin-left: 270px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.steep-sec h3 {
+  font-family: Reckless;
+  font-size: 35px;
+  margin-left: 270px;
+  color: #555b66;
+  font-weight: 300;
+}
+
+.steep-sec input {
+  margin-top: 40px;
+  text-align: left;
+  margin-left: 270px;
+  width: 420px;
+  padding: 18px 20px;
+  border-radius: 15px;
+  border: 1px solid black;
+  font-family: Figtree;
+  font-size: 18px;
+}
+
+.steep-sec input::placeholder {
+  opacity: 0.8;
+}
+
+.steep-sec button {
+  display: inline;
+  width: 150px;
+  margin-left: 20px;
+  border: none;
+  background-color: #2a2857;
+  color: white;
+  font-family: Figtree;
+  font-size: 18px;
+  padding: 18px 25px;
+  border-radius: 999px;
+  transition: 0.3s ease;
+}
+
+.steep-sec button:hover {
+  background-color: #ffb500;
+  color: black;
+  border: 1px solid black;
+}
+.social-buttons {
+  display: inline-flex;
+  margin-left: 400px;
+}
+.social-buttons button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border: 1px solid black;
+  transition: 0.3s ease;
+  padding: 0;
+}
+
+.social-buttons button:hover {
+  background-color: transparent;
+}
