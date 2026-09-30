@@ -1072,15 +1072,12 @@ h1 {
 }
 .orange-section {
   overflow: hidden;
-
-  background-color: #73bc25;
 }
 .imgdiv {
   position: relative;
   height: fit-content;
   width: fit-content;
   margin-top: 100px;
-  background-color: #a2c9fc;
 }
 
 .orange-section img {
@@ -1106,4 +1103,24 @@ h1 {
   color: white;
   font-weight: 400;
   padding: 60px;
+}
+
+.aboutus-div p {
+  margin-top: 30%;
+  color: white;
+  padding-left: 60px;
+  font-family: Figtree;
+  font-size: 25px;
+}
+
+.aboutus-div button {
+  margin-left: 60px;
+  margin-top: 50px;
+  padding: 18px 70px;
+  font-family: Figtree;
+  font-size: 18px;
+  border-radius: 999px;
+  border: none;
+  color: white;
+  background-color: #2a2857;
 }
