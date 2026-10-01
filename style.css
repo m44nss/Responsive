@@ -128,8 +128,9 @@ h1 {
 }
 
 .topimage p {
+  width: 500px;
   position: absolute;
-  top: 73%;
+  top: 72%;
   margin-left: 40px;
   color: white;
   font-size: 18px;
@@ -1291,5 +1292,29 @@ h1 {
     position: relative;
     height: 710px;
     overflow: hidden;
+  }
+
+  .new {
+    top: 50%;
+  }
+
+  .new span {
+    font-size: 40px;
+  }
+  .topimage h1 {
+    margin-left: 40px;
+    top: 60%;
+    font-size: 60px;
+  }
+
+  .topimage p {
+    top: 70%;
+    font-size: 18px;
+    width: 80%;
+    margin-left: 40px;
+  }
+  .topimage button {
+    top: 90%;
+    margin-left: 40px;
   }
 }
