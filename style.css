@@ -90,7 +90,6 @@ h1 {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 12px;
-  line-height: 1px;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -1316,5 +1315,13 @@ h1 {
   .topimage button {
     top: 90%;
     margin-left: 40px;
+  }
+
+  .purple-top-bar {
+    height: 50px;
+  }
+
+  .purple-top-bar span {
+    text-wrap: nowrap;
   }
 }
