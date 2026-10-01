@@ -126,6 +126,7 @@ h1 {
   color: white;
   font-weight: 300;
 }
+
 .topimage p {
   position: absolute;
   top: 73%;
@@ -133,6 +134,7 @@ h1 {
   color: white;
   font-size: 18px;
 }
+
 .topimage button {
   display: block;
   background-color: aqua;
@@ -146,6 +148,15 @@ h1 {
   height: 50px;
   border-radius: 999px;
   width: 200px;
+}
+
+@media (max-width: 768px) {
+  .topimage button {
+    margin-left: 20px;
+    width: 150px;
+    height: 45px;
+    font-size: 15px;
+  }
 }
 
 .white-section > h1 {
@@ -554,11 +565,11 @@ h1 {
   color: white;
 }
 
-.founder-text {
+.origin-bg > P {
   position: absolute;
   margin: 0 auto;
   text-align: center;
-  left: 6%;
+  left: 10%;
   top: 60%;
   text-wrap: nowrap;
   color: white;
@@ -1255,4 +1266,30 @@ h1 {
   padding-bottom: 25px;
   font-family: Roboto Mono;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .topimage p {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+
+  .topimage h1 {
+    font-size: 45px;
+    margin-left: 20px;
+  }
+
+  .topimage img {
+    position: absolute;
+    width: 130%;
+    top: -16%;
+    left: -8%;
+    object-fit: contain;
+  }
+
+  .topimage {
+    position: relative;
+    height: 710px;
+    overflow: hidden;
+  }
 }
