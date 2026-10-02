@@ -545,7 +545,8 @@ h1 {
 .born-in-col {
   position: absolute;
   top: 30%;
-  left: 30%;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: Midnight;
   font-size: 180px;
   text-align: center;
@@ -559,12 +560,12 @@ h1 {
   position: absolute;
   margin: 0 auto;
   text-align: center;
-  left: 10%;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
   top: 60%;
-  text-wrap: nowrap;
   color: white;
   font-size: 60px;
-  line-height: 69px;
   font-family: Reckless;
   font-weight: 50;
 }
@@ -1358,5 +1359,65 @@ h1 {
   .rc4,
   .rc5 {
     flex-shrink: 0;
+  }
+
+  .origin-bg {
+    height: 1500px;
+  }
+
+  .origin-bg > img {
+    object-fit: cover;
+  }
+
+  .origin-tag {
+    font-size: 40px;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%) rotate(-2deg);
+  }
+  .born-in-col {
+    font-size: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+  }
+
+  .origin-bg > p {
+    font-size: 32px;
+    width: 90%;
+    top: 30%;
+  }
+
+  .origin-icons {
+    width: 90%;
+    top: 60%;
+    left: 5%;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .origin-icons > div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .origin-icons img {
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .origin-bg button {
+    left: 50%;
+    top: 93%;
+    width: 80%;
+    text-wrap: nowrap;
+    transform: translateX(-50%);
   }
 }
