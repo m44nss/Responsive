@@ -1420,4 +1420,21 @@ h1 {
     text-wrap: nowrap;
     transform: translateX(-50%);
   }
+
+  .discover-section > span {
+    font-size: 40px;
+    top: 8%;
+    left: 7%;
+  }
+  .discover-section p {
+    font-size: 32px;
+    left: 7%;
+    top: 14%;
+  }
+  .search-box {
+    top: 30%;
+    width: 330px;
+    height: 80px;
+    left: 7%;
+  }
 }
