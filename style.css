@@ -150,15 +150,6 @@ h1 {
   width: 200px;
 }
 
-@media (max-width: 768px) {
-  .topimage button {
-    margin-left: 20px;
-    width: 150px;
-    height: 45px;
-    font-size: 15px;
-  }
-}
-
 .white-section > h1 {
   top: 5%;
   left: 50%;
@@ -167,9 +158,9 @@ h1 {
   font-size: 63.4px;
   font-weight: 300;
   text-align: center;
-  width: auto;
+  width: 800px;
   position: absolute;
-  white-space: nowrap;
+  white-space: wrap;
 }
 
 .white-section {
@@ -351,7 +342,8 @@ h1 {
   height: fit-content;
 
   background-color: #73bc25;
-  padding: 0 3px;
+  line-height: 0.8;
+  padding: 3px 3px;
   border-radius: 10px;
   border: 1px solid black;
 }
@@ -373,9 +365,7 @@ h1 {
 }
 .review-cards {
   display: flex;
-  justify-content: center;
   justify-content: space-around;
-  margin: auto 7px;
 }
 .rc1,
 .rc2,
@@ -1323,5 +1313,50 @@ h1 {
 
   .purple-top-bar span {
     text-wrap: nowrap;
+  }
+
+  .white-section h1 {
+    font-size: 32px;
+    text-wrap: wrap;
+    width: 90%;
+    top: 1%;
+    left: 50%;
+  }
+
+  .best-seller-tag span {
+    font-size: 40px;
+    top: 35%;
+    left: 30%;
+  }
+  .cards {
+    margin-top: -70%;
+    margin-left: 5%;
+  }
+
+  .review-h1 {
+    display: none;
+  }
+
+  .review-tag {
+    margin-left: 20px;
+  }
+
+  .review-tag span {
+    font-size: 40px;
+    top: 20%;
+  }
+
+  .review-cards {
+    margin-top: -80%;
+    margin-left: 20px;
+    gap: 10px;
+  }
+
+  .rc1,
+  .rc2,
+  .rc3,
+  .rc4,
+  .rc5 {
+    flex-shrink: 0;
   }
 }
