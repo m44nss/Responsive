@@ -1481,4 +1481,32 @@ h1 {
     text-wrap: nowrap;
     transform: translate(-50%, 0);
   }
+
+  .ease-gif img {
+    width: 140px;
+  }
+
+  .ease-gif {
+    margin-right: 30px;
+  }
+
+  .latte-section > span {
+    font-size: 40px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-3deg);
+    top: 18%;
+  }
+
+  .latte-section > h1 {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 0.9;
+    width: 100%;
+    letter-spacing: 1px;
+    margin: 140px auto 30px auto;
+  }
+
+  .latte-card-bg {
+    width: calc(100% - 40px);
+  }
 }
