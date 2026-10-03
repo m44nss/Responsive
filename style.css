@@ -1449,17 +1449,36 @@ h1 {
     width: 90%;
   }
   .cafe-section {
+    position: relative;
     margin-top: 300px;
+    height: 900px;
     flex-direction: column;
   }
   .cafe-section > img {
     object-fit: cover;
+
     width: 100%;
   }
 
   .cafe-section h1 {
     font-size: 46px;
     text-align: center;
-    transform: translate(0, 0);
+    transform: translate(0, -290%);
+  }
+
+  .cafe-text > p {
+    text-align: center;
+    width: 85%;
+    font-size: 20px;
+    margin: 0px auto 0 auto;
+    transform: translate(0, -320%);
+  }
+
+  .cafe-text > button {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    text-wrap: nowrap;
+    transform: translate(-50%, 0);
   }
 }
