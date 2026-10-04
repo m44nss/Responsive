@@ -188,7 +188,7 @@ h1 {
   height: fit-content;
   background-color: #daaeea;
   padding: 0 3px;
-  border-radius: 10px;
+  border-radius: 55x33 0px;
   border: 1px solid black;
 }
 .cards {
@@ -786,16 +786,17 @@ h1 {
   font-family: Reckless;
   color: white;
   font-weight: 400;
-  margin: 0 auto;
-  transform: translate(-20%, 70%);
+  margin: 0 auto 40px -30px;
+  transform: translate(10%, 70%);
   font-size: 84px;
 }
 
 .cafe-text > p {
   font-family: Figtree;
   font-size: 22px;
+  width: 70%;
   color: white;
-  transform: translate(-20%, 300%);
+  transform: translate(10%, 300%);
 }
 .cafe-text > button {
   font-family: Figtree;
@@ -803,7 +804,7 @@ h1 {
   padding: 15px 55px;
   border-radius: 999px;
   border: none;
-  transform: translate(-59%, 450%);
+  transform: translate(27%, 450%);
 }
 .latte-section {
   background-color: #9f6429;
@@ -870,7 +871,7 @@ h1 {
 }
 .right-section > span {
   line-height: 0.8;
-  display: block;
+  display: inline-block;
   font-family: Midnight;
   transform: rotate(-4deg);
   font-size: 60px;
@@ -883,6 +884,7 @@ h1 {
 }
 .right-section h1 {
   font-family: Reckless;
+  background-color: #8ebdfa;
   font-size: 69.4275px;
   font-weight: 400;
   margin-bottom: 10px;
@@ -1452,6 +1454,7 @@ h1 {
     position: relative;
     margin-top: 300px;
     height: 900px;
+    display: inline-flex;
     flex-direction: column;
   }
   .cafe-section > img {
@@ -1463,7 +1466,11 @@ h1 {
   .cafe-section h1 {
     font-size: 46px;
     text-align: center;
-    transform: translate(0, -290%);
+
+    position: absolute;
+    transform: translate(-50%, 0);
+    left: 57.5%;
+    top: 50%;
   }
 
   .cafe-text > p {
@@ -1508,5 +1515,42 @@ h1 {
 
   .latte-card-bg {
     width: calc(100% - 40px);
+  }
+
+  .latte-flex-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: -50px;
+  }
+
+  .latte-flex-section img {
+    margin-bottom: 50px;
+    width: 120%;
+    margin-left: -120px;
+    margin-top: -40px;
+  }
+
+  .right-section {
+    text-align: center;
+  }
+
+  .right-section h1 {
+    margin: 0 auto;
+  }
+
+  .right-section > span {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .right-section p {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #73bc25;
+    text-align: center;
+  }
+  .right-section button {
+    margin-top: 50px;
   }
 }
