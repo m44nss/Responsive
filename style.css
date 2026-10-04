@@ -884,7 +884,6 @@ h1 {
 }
 .right-section h1 {
   font-family: Reckless;
-  background-color: #8ebdfa;
   font-size: 69.4275px;
   font-weight: 400;
   margin-bottom: 10px;
@@ -1536,7 +1535,7 @@ h1 {
   }
 
   .right-section h1 {
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
   }
 
   .right-section > span {
@@ -1546,11 +1545,16 @@ h1 {
 
   .right-section p {
     width: 90%;
-    margin: 0 auto;
-    background-color: #73bc25;
+    margin: 20px auto 0 auto;
     text-align: center;
   }
   .right-section button {
-    margin-top: 50px;
+    margin-top: 60px;
+  }
+
+  .latte-section {
+    padding-bottom: 120px;
+  }
+  .latte-card-bg {
   }
 }
