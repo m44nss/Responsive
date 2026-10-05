@@ -623,6 +623,7 @@ h1 {
 }
 .discover-section p {
   position: absolute;
+  width: 50%;
   font-family: Reckless;
   font-size: 60px;
   left: 15%;
@@ -1086,6 +1087,17 @@ h1 {
   margin-top: 100px;
 }
 
+.imgdiv h1:nth-child(2) {
+  display: none;
+}
+
+.imgdiv p:nth-child(3) {
+  display: none;
+}
+
+.imgdiv button:nth-child(4) {
+  display: none;
+}
 .orange-section img {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -1431,15 +1443,20 @@ h1 {
     left: 7%;
   }
   .discover-section p {
+    width: 80vw;
     font-size: 32px;
     left: 7%;
     top: 14%;
   }
   .search-box {
     top: 30%;
-    width: 330px;
+    width: 60vw;
     height: 80px;
     left: 7%;
+  }
+
+  .search-box:focus-within {
+    width: calc(100vw - 14%);
   }
 
   .discover-section p:nth-child(4) {
@@ -1582,7 +1599,7 @@ h1 {
   }
 
   .journal-section .three-dashes {
-    width: 100vh;
+    width: 100vw;
     margin-left: 0 auto;
   }
   .journal-section button {
@@ -1594,7 +1611,8 @@ h1 {
     background-color: #f26412;
   }
 
-  .imgdiv h1 {
+  .imgdiv h1:nth-child(2) {
+    display: block;
     width: 100vw;
     font-size: 46px;
     margin-top: 50px;
@@ -1602,7 +1620,8 @@ h1 {
     font-weight: 400;
     text-align: center;
   }
-  .imgdiv p {
+  .imgdiv p:nth-child(3) {
+    display: block;
     width: 100vw;
     text-align: center;
     color: white;
@@ -1610,7 +1629,8 @@ h1 {
     margin-top: 30px;
   }
 
-  .imgdiv button {
+  .imgdiv button:nth-child(4) {
+    display: block;
     margin: 40px auto 0 auto;
     display: block;
     padding: 18px 70px;
@@ -1622,13 +1642,52 @@ h1 {
     background-color: #2a2857;
   }
   .orange-section img {
-    width: 100vh;
+    width: 100vw;
     object-fit: cover;
-    transform: translateX(-30%);
+    transform: translateX(0%);
     height: 500px;
   }
 
   .aboutus-div {
     display: none;
+  }
+
+  .steep-sec {
+    padding-left: 20px;
+    margin-top: -10px;
+  }
+  .steep-sec h2 {
+    margin-top: -60px;
+    margin-left: 0;
+    font-size: 30px;
+  }
+
+  .steep-sec h3 {
+    margin-top: 10px;
+    font-size: 28px;
+    margin-left: 0;
+  }
+
+  .steep-sec input {
+    width: 90vw;
+    margin-left: 0;
+  }
+
+  .steep-sec button {
+    width: 80vw;
+    margin-top: 10px;
+  }
+
+  .social-buttons {
+    display: inline-flex;
+    margin-top: 20px;
+    gap: -200px;
+    margin-left: -20px;
+    justify-content: center;
+  }
+
+  .social-buttons button {
+    width: 50px;
+    height: 50px;
   }
 }
