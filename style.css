@@ -1082,6 +1082,7 @@ h1 {
   position: relative;
   height: fit-content;
   width: fit-content;
+  background-color: #555b66;
   margin-top: 100px;
 }
 
@@ -1586,5 +1587,48 @@ h1 {
   }
   .journal-section button {
     text-wrap: nowrap;
+  }
+  .imgdiv {
+    height: 900px;
+    width: 100vw;
+    background-color: #f26412;
+  }
+
+  .imgdiv h1 {
+    width: 100vw;
+    font-size: 46px;
+    margin-top: 50px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+  }
+  .imgdiv p {
+    width: 100vw;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .imgdiv button {
+    margin: 40px auto 0 auto;
+    display: block;
+    padding: 18px 70px;
+    font-family: Figtree;
+    font-size: 18px;
+    border-radius: 999px;
+    border: none;
+    color: white;
+    background-color: #2a2857;
+  }
+  .orange-section img {
+    width: 100vh;
+    object-fit: cover;
+    transform: translateX(-30%);
+    height: 500px;
+  }
+
+  .aboutus-div {
+    display: none;
   }
 }
