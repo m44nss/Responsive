@@ -240,7 +240,9 @@ h1 {
 }
 
 .card-img {
-  height: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
   padding-top: 50px;
 }
 .card1 {
@@ -786,6 +788,7 @@ h1 {
 .cafe-section h1 {
   font-family: Reckless;
   color: white;
+  width: fit-content;
   font-weight: 400;
   margin: 0 auto 40px -30px;
   transform: translate(10%, 70%);
@@ -1101,17 +1104,17 @@ h1 {
 .orange-section img {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  width: 120%;
+  width: 100%;
 }
 .aboutus-div {
   position: absolute;
   width: 30%;
   left: 50px;
-  top: 60px;
+  top: 40px;
   bottom: 60px;
   border-radius: 15px;
   border: 1px solid black;
-  height: calc(100%-120px);
+  height: 80%;
   background-color: #f26412;
 }
 
@@ -1124,7 +1127,7 @@ h1 {
 }
 
 .aboutus-div p {
-  margin-top: 30%;
+  margin-top: 20%;
   color: white;
   padding-left: 60px;
   font-family: Figtree;
@@ -1133,7 +1136,7 @@ h1 {
 
 .aboutus-div button {
   margin-left: 60px;
-  margin-top: 50px;
+  margin-top: 75px;
   padding: 18px 70px;
   font-family: Figtree;
   font-size: 18px;
@@ -1575,8 +1578,6 @@ h1 {
   .latte-section {
     padding-bottom: 120px;
   }
-  .latte-card-bg {
-  }
 
   .journal-section {
     padding-top: 50px;
@@ -1655,6 +1656,7 @@ h1 {
   .steep-sec {
     padding-left: 20px;
     margin-top: -10px;
+    padding-bottom: 250px;
   }
   .steep-sec h2 {
     margin-top: -60px;
@@ -1689,5 +1691,165 @@ h1 {
   .social-buttons button {
     width: 50px;
     height: 50px;
+  }
+
+  .steep-sec > img:last-of-type {
+    height: 100px;
+    top: 68%;
+  }
+}
+
+.menu-wrapper {
+  background: #2d2b63;
+  margin-top: 40px;
+  margin-left: 20px;
+  border-radius: 18px;
+  padding: 0 20px;
+  width: calc(100vw - 80px);
+}
+
+/* =========================
+   EACH MENU ITEM
+========================= */
+
+.menu-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.menu-item summary {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 24px 0;
+
+  color: white;
+  font-family: Reckless;
+  font-size: 32px;
+
+  cursor: pointer;
+}
+
+/* Remove default browser arrow */
+
+.menu-item summary::-webkit-details-marker {
+  display: none;
+}
+
+/* =========================
+   CIRCLE ARROW
+========================= */
+
+.arrow {
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+
+  background: #c8e4fa;
+
+  position: relative;
+
+  flex-shrink: 0;
+}
+
+/* Arrow */
+
+.arrow::after {
+  content: "";
+
+  position: absolute;
+
+  width: 9px;
+  height: 9px;
+
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+
+  transform: rotate(45deg);
+
+  top: 9px;
+  left: 11px;
+}
+
+/* =========================
+   OPEN ARROW
+========================= */
+
+.menu-item[open] .arrow::after {
+  transform: rotate(225deg);
+
+  top: 13px;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+
+  padding: 5px 0 28px;
+  gap: 5px;
+}
+
+.menu-content a {
+  color: #9998ad;
+
+  text-decoration: none;
+
+  font-family: Figtree;
+  font-size: 18px;
+
+  line-height: 1.35;
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 769px) {
+  .menu-wrapper {
+    background: #2d2b63;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 70px;
+
+    padding: 60px 70px;
+  }
+
+  .menu-item {
+    border: none;
+  }
+
+  .menu-item summary {
+    font-size: 28px;
+    padding: 0 0 25px;
+  }
+
+  .menu-content {
+    padding: 0;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .menu-content a {
+    font-size: 18px;
+  }
+
+  .menu-item::details-content {
+    content-visibility: visible;
   }
 }
